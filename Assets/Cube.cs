@@ -14,6 +14,9 @@ public class Cube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.anyKeyDown){
+            rend.material.color = UnityEngine.Random.ColorHSV();
+            Debug.Log("ASDF");
+        }
     }
 }
